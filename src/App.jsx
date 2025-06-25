@@ -25,7 +25,7 @@ function App() {
   };
   return (
     <>
-      <div className="flex min-w-full min-h-screen flex-col-reverse md:flex-row md:min-w-[1000px] ustify-center">
+      <div className="flex w-full min-w-[500px] min-h-screen flex-col-reverse md:flex-row md:min-w-[1000px] justify-center">
         <div className="flex-1 w-full md:w-1/2 max-w-full">
           <div className="flex-col">
             {items.map((item, index) => { 
