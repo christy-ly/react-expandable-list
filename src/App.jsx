@@ -25,10 +25,10 @@ function App() {
   };
   return (
     <>
-      <div className="flex w-full h-screen flex-col-reverse md:flex-row ">
-        <div className="w-full md:w-1/2 min-w-[600px]">
+      <div className="flex min-w-full min-h-screen flex-col-reverse md:flex-row md:min-w-[1000px] ustify-center">
+        <div className="flex-1 w-full md:w-1/2 max-w-full">
           <div className="flex-col">
-            {items.map((item, index) => {
+            {items.map((item, index) => { 
               let currentBlock = isExpanded && expandedIndex == index;
               return (
                 <div className="bg-gray-200 mb-5 rounded">
@@ -45,9 +45,9 @@ function App() {
           </div>
         </div>
 
-        <div className="w-full sm:mb-5 md:w-1/2 md:mx-5 min-w-[600px]">
+        <div className="flex-1 w-full sm:mb-5 md:w-1/2 md:mx-5">
           <div
-            className="relative group  cursor-pointer"
+            className="relative group cursor-pointer w-full"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
